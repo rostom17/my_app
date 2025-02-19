@@ -34,41 +34,50 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(title),
       ),
-      body: Row(
-        //mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          Icon(
-            CupertinoIcons.star_fill,
-            color: Colors.yellow,
-            size: 40,
-          ),
-          Icon(
-            CupertinoIcons.star_fill,
-            color: Colors.yellow,
-            size: 40,
-          ),
-          Icon(
-            CupertinoIcons.star_fill,
-            color: Colors.grey,
-            size: 40,
-          ),
-          Icon(
-            CupertinoIcons.star_fill,
-            color: Colors.grey,
-            size: 40,
-          ),
-          Icon(
-            CupertinoIcons.star_fill,
-            color: Colors.grey,
-            size: 40,
-          ),
-          //const Spacer(),
-          // Text(
-          //   "This is an icon widget",
-          //   style: TextStyle(
-          //       fontSize: 30, color: Colors.blue, fontWeight: FontWeight.bold),
-          // ),
-        ],
+      body: SizedBox(
+        width: double.maxFinite,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Icon(
+              CupertinoIcons.star_fill,
+              color: Colors.yellow,
+              size: 40,
+            ),
+            Image(
+              image: AssetImage("assets/nike2.png"),
+              height: 100,
+              width: 100,
+            ),
+            Icon(
+              CupertinoIcons.star_fill,
+              color: Colors.yellow,
+              size: 40,
+            ),
+            // Icon(
+            //   CupertinoIcons.star_fill,
+            //   color: Colors.grey,
+            //   size: 40,
+            // ),
+            // Icon(
+            //   CupertinoIcons.star_fill,
+            //   color: Colors.grey,
+            //   size: 40,
+            // ),
+            // Icon(
+            //   CupertinoIcons.star_fill,
+            //   color: Colors.grey,
+            //   size: 40,
+            // ),
+            //const Spacer(),
+            // Text(
+            //   "This is an icon widget",
+            //   style: TextStyle(
+            //       fontSize: 30, color: Colors.blue, fontWeight: FontWeight.bold),
+            // ),
+          ],
+        ),
       ),
     );
   }
