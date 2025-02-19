@@ -36,47 +36,59 @@ class MyHomePage extends StatelessWidget {
       ),
       body: SizedBox(
         width: double.maxFinite,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Icon(
-              CupertinoIcons.star_fill,
-              color: Colors.yellow,
-              size: 40,
+        // child: Column(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   crossAxisAlignment: CrossAxisAlignment.center,
+        //   children: [
+        //     Icon(
+        //       CupertinoIcons.star_fill,
+        //       color: Colors.yellow,
+        //       size: 40,
+        //     ),
+        //     Image(
+        //       image: AssetImage("assets/nike2.png"),
+        //       height: 100,
+        //       width: 100,
+        //     ),
+        //     Icon(
+        //       CupertinoIcons.star_fill,
+        //       color: Colors.yellow,
+        //       size: 40,
+        //     ),
+        //     // Icon(
+        //     //   CupertinoIcons.star_fill,
+        //     //   color: Colors.grey,
+        //     //   size: 40,
+        //     // ),
+        //     // Icon(
+        //     //   CupertinoIcons.star_fill,
+        //     //   color: Colors.grey,
+        //     //   size: 40,
+        //     // ),
+        //     // Icon(
+        //     //   CupertinoIcons.star_fill,
+        //     //   color: Colors.grey,
+        //     //   size: 40,
+        //     // ),
+        //     //const Spacer(),
+        //     // Text(
+        //     //   "This is an icon widget",
+        //     //   style: TextStyle(
+        //     //       fontSize: 30, color: Colors.blue, fontWeight: FontWeight.bold),
+        //     // ),
+        //   ],
+        // ),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: List.generate(
+              100,
+              (index) => Icon(
+                Icons.home,
+                size: index.toDouble(),
+              ),
             ),
-            Image(
-              image: AssetImage("assets/nike2.png"),
-              height: 100,
-              width: 100,
-            ),
-            Icon(
-              CupertinoIcons.star_fill,
-              color: Colors.yellow,
-              size: 40,
-            ),
-            // Icon(
-            //   CupertinoIcons.star_fill,
-            //   color: Colors.grey,
-            //   size: 40,
-            // ),
-            // Icon(
-            //   CupertinoIcons.star_fill,
-            //   color: Colors.grey,
-            //   size: 40,
-            // ),
-            // Icon(
-            //   CupertinoIcons.star_fill,
-            //   color: Colors.grey,
-            //   size: 40,
-            // ),
-            //const Spacer(),
-            // Text(
-            //   "This is an icon widget",
-            //   style: TextStyle(
-            //       fontSize: 30, color: Colors.blue, fontWeight: FontWeight.bold),
-            // ),
-          ],
+          ),
         ),
       ),
     );
