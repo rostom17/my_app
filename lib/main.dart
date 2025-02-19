@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,19 +35,39 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Icon(
-            Icons.home,
-            size: 50,
-            color: Colors.orange,
+            CupertinoIcons.star_fill,
+            color: Colors.yellow,
+            size: 40,
+          ),
+          Icon(
+            CupertinoIcons.star_fill,
+            color: Colors.yellow,
+            size: 40,
+          ),
+          Icon(
+            CupertinoIcons.star_fill,
+            color: Colors.grey,
+            size: 40,
+          ),
+          Icon(
+            CupertinoIcons.star_fill,
+            color: Colors.grey,
+            size: 40,
+          ),
+          Icon(
+            CupertinoIcons.star_fill,
+            color: Colors.grey,
+            size: 40,
           ),
           //const Spacer(),
-          Text(
-            "This is an icon widget",
-            style: TextStyle(
-                fontSize: 30, color: Colors.blue, fontWeight: FontWeight.bold),
-          ),
+          // Text(
+          //   "This is an icon widget",
+          //   style: TextStyle(
+          //       fontSize: 30, color: Colors.blue, fontWeight: FontWeight.bold),
+          // ),
         ],
       ),
     );
